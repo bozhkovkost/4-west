@@ -1,10 +1,12 @@
 {
-  "name": "west",
-  "version": "0.0.1",
-  "dependencies": {
-    "http-server": "^0.12.3"
-  },
-  "scripts": {
-    "start": "http-server -p 8080 -c-1 ./src"
-  }
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
 }
